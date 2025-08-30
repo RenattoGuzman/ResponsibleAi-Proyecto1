@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="readme">
+        <h1>Responsible AI Project - README</h1>
+        <p>Welcome to the Responsible AI project! Please follow the steps below to reproduce and explore the project:</p>
+        <ol>
+            <li>Ensure you have Python 3.x installed on your system.</li>
+            <li>Install the required Python packages by running <code>pip install -r requirements.txt</code> in the project directory.</li>
+            <li>Download the necessary datasets, which are already included in the <code>data/</code> folder.</li>
+            <li>Open the Jupyter Notebooks (<code>eda.ipynb</code>, <code>model_exp.ipynb</code>, <code>model.ipynb</code>) in Jupyter Lab or Jupyter Notebook to run and explore the code step by step.</li>
+            <li>Alternatively, use the Notebook Viewer below to browse the HTML exports of each notebook.</li>
+            <li>For further details, refer to the documentation and comments within each notebook.</li>
+        </ol>
+        <p>If you encounter any issues, please check your Python environment and package installations.</p>
+    </section>
+    <hr>
+    <h2>Notebook Viewer</h2>
+    <label for="notebook-select">Choose a notebook:</label>
+    <select id="notebook-select">
+        <option value="eda.html">EDA</option>
+        <option value="model_exp.html">Model Exp</option>
+        <option value="model.html">Model</option>
+    </select>
+    <div id="notebook-content">
+        <!-- Notebook HTML will be loaded here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
